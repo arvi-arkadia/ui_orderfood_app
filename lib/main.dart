@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ui_orderfood_app/constants.dart';
+import 'package:ui_orderfood_app/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(),
-      home: Scaffold(),
+      debugShowCheckedModeBanner: false,
+      title: 'Order-Food App',
+      theme: ThemeData(
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      home: HomeScreens(),
     );
   }
 }

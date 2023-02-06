@@ -3,8 +3,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ui_orderfood_app/constants.dart';
 
 class SearchBox extends StatelessWidget {
+  final ValueChanged<String> onChanged;
   const SearchBox({
     super.key,
+    required this.onChanged,
   });
 
   @override
@@ -19,6 +21,7 @@ class SearchBox extends StatelessWidget {
         borderRadius: BorderRadius.circular(50),
       ),
       child: TextField(
+        onChanged: onChanged,
         decoration: InputDecoration(
           border: InputBorder.none,
           icon: SvgPicture.asset(

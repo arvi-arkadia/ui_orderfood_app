@@ -1,6 +1,9 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ui_orderfood_app/constants.dart';
+import 'package:ui_orderfood_app/screens/home/home_screen.dart';
 
 AppBar detailsAppBar() {
   return AppBar(
